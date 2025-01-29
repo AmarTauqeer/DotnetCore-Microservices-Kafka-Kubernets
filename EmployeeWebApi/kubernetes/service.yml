@@ -1,0 +1,12 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: employee
+spec:
+  selector:
+    app: employee
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  type: NodePort
